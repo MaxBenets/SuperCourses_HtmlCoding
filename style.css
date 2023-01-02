@@ -1,0 +1,680 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: #252B42;
+}
+
+::-webkit-scrollbar {
+   width: 10px;
+   background: #252B42;
+}
+
+::-webkit-scrollbar-thumb {
+   background: #eee;
+}
+
+.app {
+   max-width: 1046px;
+   margin: 0 auto;
+}
+
+.header {
+   display: flex;
+   margin-top: 20px;
+   align-items: center;
+}
+
+.brand,
+.menu .menu__item,
+.buttons__login,
+.buttons__joinus,
+.main__type,
+.main__header,
+.main__subline,
+.main__learn,
+.main__plus,
+.about__title,
+.about__learnMore,
+.lessons__header,
+.lessons__sale,
+.lessons__category,
+.lesson__name {
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 24px;
+   line-height: 32px;
+   letter-spacing: 0.1px;
+   color: #FFFFFF;
+}
+
+.menu {
+   display: flex;
+   margin-left: 83px;
+   gap: 21px;
+}
+
+.menu .menu__item {
+   display: block;
+   color: #fff;
+   text-decoration: none;
+   font-size: 14px;
+   line-height: 24px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+}
+
+.buttons {
+   width: 100%;
+   flex: 1;
+   display: flex;
+   justify-content: right;
+   align-items: center;
+}
+
+.buttons__login,
+.buttons__joinus {
+   font-size: 14px;
+   line-height: 22px;
+   text-align: right;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+   text-decoration: none;
+}
+
+.buttons__joinus {
+   margin-left: 45px;
+   display: block;
+   background: #23A6F0;
+   border-radius: 5px;
+   padding: 15px 25px;
+   transition: 0.3s;
+}
+
+.buttons__joinus:hover {
+   opacity: 0.8;
+}
+
+.buttons__img {
+   margin-left: 15px;
+}
+
+.main {
+   text-align: center;
+   max-width: 699px;
+   margin: 0 auto;
+   margin-top: 133px;
+}
+
+.main__type {
+   text-align: center;
+   max-width: 699px;
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: 0.1px;
+   color: #23A6F0;
+}
+
+.main__header {
+   font-size: 58px;
+   line-height: 80px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+   margin-top: 40px;
+}
+
+.main__subline,
+.main__column__subline,
+.about__p,
+.lessons__subtext {
+   font-family: "Montserrat";
+   margin-top: 40px;
+   font-size: 20px;
+   line-height: 30px;
+   font-weight: 400;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+}
+
+.main__buttons {
+   margin-top: 40px;
+   display: flex;
+   justify-content: center;
+}
+
+.main__button {
+   display: block;
+   width: auto;
+}
+
+.main__learn {
+   margin-left: 10px;
+   font-size: 14px;
+   line-height: 22px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #23A6F0;
+   padding: 15px 25px;
+   border: 1px solid #23A6F0;
+   border-radius: 5px;
+   text-decoration: none;
+}
+
+.main__columns {
+   display: flex;
+   margin-top: 86px;
+   gap: 30px;
+}
+
+.main__item {
+   flex: 1;
+   background: #FFFFFF;
+}
+
+
+.main__icon {
+   padding: 15px;
+   background: #E74040;
+   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+   border-radius: 200px;
+   transform: translateY(-50%);
+   display: block;
+   margin: 0 auto;
+}
+
+.main__plus {
+   font-size: 16px;
+   line-height: 24px;
+   text-align: center;
+   letter-spacing: 0.1px;
+   color: #000;
+}
+
+.main__line {
+   background: #E74040;
+   width: 50px;
+   height: 2px;
+   margin: 20px auto;
+}
+
+.main__column__subline {
+   font-size: 14px;
+   line-height: 20px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #737373;
+   max-width: 221px;
+   margin: 0 auto;
+   margin-bottom: 56px;
+}
+
+.about {
+   margin-top: 312px;
+   display: flex;
+}
+
+.about__item {
+   flex: 1
+}
+
+.about__line {
+   background: #E74040;
+   width: 94px;
+   height: 7px;
+}
+
+.about__title {
+   font-size: 40px;
+   line-height: 50px;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+   margin-top: 35px;
+   max-width: 394px;
+}
+
+.about__p {
+   font-size: 14px;
+   line-height: 20px;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+   max-width: 345px;
+   text-align: left;
+}
+
+.about__learnMore {
+   margin-top: 35px;
+   display: block;
+   text-decoration: none;
+   font-size: 14px;
+   line-height: 24px;
+   letter-spacing: 0.2px;
+   color: #23A6F0;
+   display: flex;
+   align-items: center;
+}
+
+.about__lineblue {
+   margin-left: 10px;
+}
+
+.about__children {
+   width: 100%;
+}
+
+.lessons {
+   margin-top: 320px;
+}
+
+.lessons__header {
+   font-size: 14px;
+   line-height: 24px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #23A6F0;
+}
+
+.lessons__subtext {
+   font-size: 14px;
+   line-height: 20px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+   max-width: 463px;
+   margin: 70px auto;
+}
+
+.lessons__row {
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+   overflow-x: scroll;
+   padding: 0px;
+   gap: 15px;
+   width: 100%;
+   max-width: 710px;
+   margin: 0 auto;
+}
+
+.lessons__item {
+   width: 100%;
+   max-width: 330px;
+   background: #FFFFFF;
+}
+
+.lessons__img__container {
+   position: relative;
+}
+
+.lessons__sale {
+   position: absolute;
+   top: 20px;
+   left: 20px;
+   font-size: 14px;
+   line-height: 24px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+   padding: 0 10px;
+   background: #E74040;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+   border-radius: 3px;
+}
+
+.lessons__buttons {
+   position: absolute;
+   bottom: 25px;
+   left: 0px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+
+}
+
+.lessons__button {
+   display: block;
+   background: rgba(255, 255, 255, 1);
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 15px;
+}
+
+.lessons__container {
+   max-width: 280px;
+   margin: 0 auto;
+}
+
+.lesson__header {
+   display: flex;
+}
+
+.lessons__categoryContainer {
+   margin-top: 26px;
+}
+
+.lessons__category {
+   font-size: 14px;
+   line-height: 24px;
+   letter-spacing: 0.2px;
+   color: #23A6F0;
+}
+
+.lessons__starItem {
+   flex: 1;
+   display: flex;
+   justify-content: right;
+}
+
+.lessons__starContainer {
+   padding: 5px;
+   background: #252B42;
+   border-radius: 20px;
+   display: flex;
+   align-items: center;
+}
+
+.lessons__star {
+   width: 12px;
+}
+
+.lessons__ocinka {
+   display: block;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 12px;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+   margin-left: 5px;
+}
+
+.lessons__about {
+   margin-top: 10px;
+}
+
+.lesson__name {
+   font-size: 16px;
+   line-height: 24px;
+   letter-spacing: 0.1px;
+   color: #252B42;
+}
+
+.lesson__text {
+   font-family: 'Montserrat';
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 20px;
+   letter-spacing: 0.2px;
+   color: #737373;
+   margin-top: 10px;
+}
+
+.lessons__sales {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin-top: 10px;
+}
+
+.lessons__salesCount {
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 24px;
+   letter-spacing: 0.2px;
+   color: #737373;
+}
+
+.lessons__count {
+   margin-top: 10px;
+}
+
+.lessons__oldCount,
+.lessons__newCount {
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   text-align: center;
+   letter-spacing: 0.1px;
+   color: #BDBDBD;
+}
+
+.lessons__newCount {
+   color: #40BB15;
+   margin-left: 5px;
+}
+
+.lessons__info {
+   display: flex;
+   gap: 11px;
+   margin-top: 25px;
+}
+
+.lessons__info_item {
+   display: flex;
+   align-items: center;
+   gap: 5px
+}
+
+.lessons__info_text {
+   font-family: 'Montserrat';
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 16px;
+   letter-spacing: 0.2px;
+   color: #737373;
+}
+
+.lessons__learnmore {
+   display: block;
+   width: 150.14px;
+   padding: 10px 20px;
+   border: 1px solid #23A6F0;
+   border-radius: 37px;
+   margin-top: 20px;
+   text-decoration: none;
+   color: #23A6F0;
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 24px;
+   letter-spacing: 0.2px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.cliens {
+   margin-top: 344px;
+}
+
+.cliens__header {
+   margin-top: 10px;
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 50px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+}
+
+.cliens__p {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 20px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+   max-width: 463px;
+   margin: 0 auto;
+   margin-top: 10px;
+}
+
+.cliens__row {
+   display: flex;
+   overflow-x: scroll;
+   margin-top: 100px;
+   gap: 15px;
+}
+
+.cliens__item {
+   padding: 25px 25px 0px;
+   background: #FFFFFF;
+   flex: 1;
+}
+
+.cliens__person {
+   display: block;
+   max-width: 128px;
+   margin: 0 auto;
+   border-radius: 100%;
+}
+
+.cliens__text {
+   max-width: 159px;
+   margin: 0 auto;
+   margin-top: 30px;
+   font-family: 'Montserrat';
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 20px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #737373;
+}
+
+.cliens__stars {
+   max-width: 130px;
+   margin: 0 auto;
+   display: flex;
+   gap: 5px;
+   margin-top: 15px;
+}
+
+.cliens__name {
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 24px;
+   text-align: center;
+   letter-spacing: 0.1px;
+   color: #252B42;
+   margin-top: 25px;
+}
+
+.cliens__spec {
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 24px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #737373;
+   margin-top: 5px;
+   margin-bottom: 30px;
+}
+
+
+.form__h2 {
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 50px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+   margin-top: 10px;
+}
+
+.form__text {
+   font-family: 'Montserrat';
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 20px;
+   text-align: center;
+   letter-spacing: 0.2px;
+   color: #FFFFFF;
+   max-width: 463px;
+   margin: 0 auto;
+   margin-top: 10px;
+}
+
+.form {
+   margin-top: 320px;
+}
+
+.form__form {
+   display: flex;
+   margin-top: 80px;
+   margin-bottom: 300px;
+}
+
+.form__form input {
+   background: #F9F9F9;
+   border: 1px solid #E6E6E6;
+   border-top-left-radius: 5px;
+   border-bottom-left-radius: 5px;
+   width: 100%;
+   padding: 15px 20px;
+   outline: 0;
+   flex: 1;
+   width: 100%;
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 28px;
+   letter-spacing: 0.2px;
+}
+
+.form__form button {
+   background: #23A6F0;
+   border: 1px solid #23A6F0;
+   border-radius: 0px 5px 5px 0px;
+   flex: 1;
+   max-width: 171px;
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 28px;
+   letter-spacing: 0.2px;
+   color: #fff;
+}
+
+@media (max-width: 1046px) {
+   .header {
+      flex-direction: column;
+   }
+
+   .menu {
+      margin-left: 0;
+      margin-top: 20px;
+   }
+
+   .buttons {
+      justify-content: center;
+      margin-top: 25px;
+   }
+}
+
+@media (max-width: 900px) {
+
+   .main__columns,
+   .about {
+      flex-direction: column;
+   }
+}
