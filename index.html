@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>RIST IT</title>
    <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,12 +13,13 @@
 
    <div class="app">
       <header class="header">
-         <h2 class="item brand">Brand Name</h2>
+         <h2 class="item brand">RIST IT</h2>
          <nav class="item menu">
-            <a href="" class="menu__item">Home</a>
-            <a href="" class="menu__item">Product</a>
-            <a href="" class="menu__item">Pricing</a>
-            <a href="" class="menu__item">Contact</a>
+            <a href="/" class="menu__item">Home</a>
+            <a href="#about" class="menu__item">About</a>
+            <a href="#lessons" class="menu__item">Lessons</a>
+            <a href="#reviews" class="menu__item">Reviews</a>
+            <a href="#contact" class="menu__item">Contact</a>
          </nav>
          <div class="item buttons">
             <a href="" class="buttons__item buttons__login">Login</a>
@@ -32,10 +33,9 @@
 
       <div class="main">
          <h5 class="main__type">Online training</h5>
-         <h1 class="main__header">Selling on the internet like a pro</h1>
+         <h1 class="main__header">Web development</h1>
          <p class="main__subline">
-            We know how large objects will act, but things on a
-            small scale just do not act that way.
+            The course is designed for people who have never programmed before
          </p>
 
          <div class="main__buttons">
@@ -77,14 +77,13 @@
          </div>
       </div>
 
-      <div class="about">
+      <div class="about" id="about">
          <div class="about__item">
             <div class="about__line"></div>
-            <h2 class="about__title">Packages that are aprodable</h2>
+            <h2 class="about__title">About us</h2>
             <p class="about__p">
-               Problems trying to resolve the conflict between
-               the two major realms of Classical physics:
-               Newtonian mechanics
+               We have been teaching web programming for more than 2 years. We have already graduated more than 1,000
+               students
             </p>
 
             <a href="" class="about__learnMore">
@@ -97,11 +96,10 @@
          </div>
       </div>
 
-      <div class="lessons">
-         <h5 class="lessons__header">Practice Advice</h5>
+      <div class="lessons" id="lessons">
+         <h5 class="lessons__header">Our Courses</h5>
          <p class="lessons__subtext">
-            Problems trying to resolve the conflict between
-            the two major realms of Classical physics: Newtonian mechanics
+            We have several author's courses, you can familiarize yourself with them below
          </p>
 
          <div class="lessons__row">
@@ -342,13 +340,12 @@
          </div>
       </div>
 
-      <div class="cliens">
-         <h5 class="lessons__header">Practice Advice</h5>
+      <div class="cliens" id="reviews">
+         <h5 class="lessons__header">Reviews</h5>
 
-         <h2 class="cliens__header">Each and every client is important.</h2>
+         <h2 class="cliens__header">Every student is important to us</h2>
          <p class="cliens__p">
-            Problems trying to resolve the conflict between
-            the two major realms of Classical physics: Newtonian mechanics
+            Reviews of our graduates
          </p>
 
          <div class="cliens__row">
@@ -356,11 +353,8 @@
                <img class="cliens__person" src="media/img/cliens__img/woman1.png" alt="">
 
                <p class="cliens__text">
-                  Slate helps you see how many more days
-                  you need to work to
-                  reach your financial
-                  goal for the month
-                  and year.
+                  I studied web designers at RISTIT, after graduation I got a job in an IT company where I am currently
+                  engaged in design. Everyone is very satisfied!
                </p>
 
                <div class="cliens__stars">
@@ -378,11 +372,8 @@
                <img class="cliens__person" src="media/img/cliens__img/woman2.png" alt="">
 
                <p class="cliens__text">
-                  Slate helps you see how many more days
-                  you need to work to
-                  reach your financial
-                  goal for the month
-                  and year.
+                  I studied web designers at RISTIT, after graduation I got a job in an IT company where I am currently
+                  engaged in design. Everyone is very satisfied!
                </p>
 
                <div class="cliens__stars">
@@ -399,21 +390,26 @@
          </div>
       </div>
 
-      <div class="form">
-         <h5 class="lessons__header">Practice Advice</h5>
+      <div class="form" id="contact">
+         <h5 class="lessons__header">Contact form</h5>
 
-         <h2 class="form__h2">Featured Products</h2>
+         <h2 class="form__h2">Have a question?</h2>
          <p class="form__text">
-            Problems trying to resolve the conflict between
-            the two major realms of Classical physics: Newtonian mechanics
+            Enter your email and our operator will contact you shortly <br>
          </p>
 
-         <form action="" class="form__form">
-            <input type="email" placeholder="Your Email">
+         <form id="subscribeButton" action="" class="form__form">
+            <input type="email" id="emailInput" name="email" placeholder="Your Email">
             <button>Subscribe</button>
          </form>
       </div>
    </div>
+
+   <div class="totop" id="totop">
+      <img src="media/icons/totop.png" alt="">
+   </div>
+
+   <script src="script.js"></script>
 
 </body>
 
